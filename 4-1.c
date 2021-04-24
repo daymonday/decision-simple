@@ -1,21 +1,25 @@
 #include <stdio.h>
 
 int main ()
-
-int
-printf("Ingrese 3 numeros distintos:"nn);
-scanf("%d",&N1);
-printf("Ingrese otro numero:"):
-scanf("%d",&N2);
+{
+printf("Ingrese 3 numeros distintos:");
+scanf("%d",&n1);
 printf("Ingrese otro numero:");
-scanf("%d",&N3);
-if(N1>N2 && N1>N3);
-    printf("N1%d es mayor");
+scanf("%d",&n2);
+printf("Ingrese otro numero:");
+scanf("%d",&n3);
+if 
+{
+    (n1>n2 && n1>n3);
+    { printf("%d es mayor"),n1;
     else
-        N2>N1 && N2>N3
+        n2>n1 && n2>n3
         printf("N2%d es mayor");
+    }
 else
-    printf("N3%d es mayor");
+    printf("n3%d es mayor");
+}
 system ("pause");
 return 0;
+}
 
