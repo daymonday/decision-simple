@@ -1,22 +1,33 @@
-#define bono50=500
-#define bono150=1000
+#define BONO_50 500
+#define BONO_150 1000
 #include <stdio.h>
 
-main ()
+int main ()
 {
-    printf("Ingrese valor de hora trabajadas:");
-    scanf("%d"&valor_hora)
-    printf("Ingrese cantidad de horas trabajadas:");
-    scanf("%d"&cant_hora);
-    sueldo=valor_hora*cant_hora
+    int valor_hora, cant_hora,sueldo;
 
-    if cant_hora>50
+    printf("\nIngrese valor de hora trabajadas:");
+    scanf("%d",&valor_hora);
+    printf("\nIngrese cantidad de horas trabajadas:");
+    scanf("%d",&cant_hora);
+
+    sueldo=valor_hora*cant_hora;
+
+    if (cant_hora>50)
     {
-        if cant_hora>150
-            printf("El sueldo es %d",sueldo+bono50+bono150);
-        else printf("El sueldo es %d",sueldo+bono50);
+        if (cant_hora>150)
+        {
+            printf("\nEl sueldo es %d",sueldo+BONO_50+BONO_150);
+        }
+        else
+        {
+            printf("\nEl sueldo es %d",sueldo+BONO_50);
+        }
     }
-    else printf("El sueldo es %d",sueldo);
+    else
+    {
+        printf("\nEl sueldo es %d",sueldo);
+    }
 
     return 0;
 }
