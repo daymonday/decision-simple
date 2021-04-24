@@ -2,22 +2,26 @@
 
 int main ()
 {
-printf("Ingrese 3 numeros:"nn);
-scanf("%f",&N1);
-printf("Ingrese otro numero:");
-scanf("%f",&N2);
-printf("Ingrese otro numero:");
-scanf("%f",&N3);
-if(N1==N2&&N3==N1&&N2==N3);
-    {{
-    printf("TRES IGUALES");
+    int N1,N2,N3;
+    printf("\nIngrese 3 numeros:");
+    scanf("%f",&N1);
+    printf("\nIngrese otro numero:");
+    scanf("%f",&N2);
+    printf("\nIngrese otro numero:");
+    scanf("%f",&N3);
+    if(N1==N2&&N3==N1&&N2==N3)
+    {
+        printf("\nTRES IGUALES");
+    }
+    else if(N3<N1&&N3<N2)
+    {
+        printf("\nMayores al tercero");
+    }
     else
-        N3<N1&&N3<N2
-        printf("Mayores al tercero");
-}
-else
-    printf("Alguno es mayor al tercero");
-}
-system ("pause");
-return 0;
+    {
+        printf("\nAlguno es mayor al tercero");
+    }
+    printf("\n");
+    system ("pause");
+    return 0;
 }
