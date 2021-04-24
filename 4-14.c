@@ -1,26 +1,32 @@
 #include <stdio.h>
-#define des_1=4.5
-#define des_2=8
-#define des_3=10.5
-
-main()
+  
+int
+main () 
 {
-    printf("Ingrese importe:");
-    scanf("%d",importe);
-    if importe<55
-        {printf("Su descuento es de:%d",des_1);
-        precio_neto=importe+importe*(1/des_1)
-        else
-            {
-                if importe>100
-                    printf("Su descuento es de:%d",des_3);
-                    precio_neto=importe+importe*(1/des_3)
-                    else
-                    printf("Su descuento es de:%d",des_2);
-                    precio_neto=importe+importe*(1/des_2)
-            }
-
+  int des_1, des_2, des_3, importe,precio_neto;
+des_1 = 0.45;
+ des_2 = 0.8;
+ des_3 = 0.105;
+printf ("Ingrese importe:");
+scanf ("%d",&importe);
+if (importe < 55)
+    {
+    printf ("Su descuento es de:%d",des_1);
+    precio_neto = importe + importe * des_1;
     }
-    printf("Su descuento es de:%d",precio_neto);
-    return 0;
+      else if (importe > 100)
+	    {
+         printf ("Su descuento es de:%d", des_3);	
+        precio_neto = importe + importe * (1 / des_3);
+	     }
+	else	
+	{printf ("Su descuento es de:%d",des_2);
+	precio_neto = importe + importe * (1 / des_2);
+	}
+  
+printf ("El precio neto es de:%d",precio_neto);
+  
+return 0;
+
 }
+
