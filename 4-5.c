@@ -28,7 +28,7 @@ int main ()
             tres=N2;
         }
     }
-    else if(N2>N1&& 2>N3)
+    else if(N2>N1&&N2>N3)
     {
         uno=N2;
 
