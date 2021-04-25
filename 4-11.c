@@ -12,7 +12,7 @@ main ()
   scanf ("%d", &m);
   if (m == FEBRERO)
     {
-      a / 400;
+      a / 400; // && arriba ?
       printf ("El mes tiene 29 dias.");
     }
   else if (!a/400)
