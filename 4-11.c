@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define FEBRERO 2
 
 int
 main ()
@@ -9,7 +10,7 @@ main ()
   scanf ("%d", &a);
   printf ("Ingrese numero de mes:");
   scanf ("%d", &m);
-  if (m == febrero)
+  if (m == FEBRERO)
     {
       a / 400;
       printf ("El mes tiene 29 dias.");
